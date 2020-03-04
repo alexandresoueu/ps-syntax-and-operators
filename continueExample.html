@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Continue</title>
+</head>
+
+<body>
+    <button onclick="continueSample()">Continue</button>
+    <script>
+        'use strict'
+
+
+        let _products = [
+            {
+                "ProductID": 680,
+                "name": "HL Road Frame - Black, 58",
+                "productNumber": "FR-R92B-58",
+                "color": "Black",
+                "standadCost": 1059.31,
+                "listPrice": 1431.50,
+            },
+            {
+                "ProductID": 707,
+                "name": "Sport-100 Helmet Red",
+                "productNumber": "HL-U509-R",
+                "color": "Red",
+                "standadCost": 13.08,
+                "listPrice": 34.99,
+            },
+            {
+                "ProductID": 709,
+                "name": "Mountain Bike Socks, M",
+                "productNumber": "SO-B909-M",
+                "color": "White",
+                "standadCost": 3.3963,
+                "listPrice": 9.50,
+            }
+        ]
+
+        function continueSample() {
+            for (const item of _products) {
+                if(item.standadCost > 1000) {
+                    continue
+                }
+                console.log(JSON.stringify(item))
+            }
+        }
+
+    </script>
+</body>
+
+</html>
