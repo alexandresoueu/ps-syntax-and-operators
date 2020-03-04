@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Looping Sample</title>
+</head>
+
+<body>
+    <button onclick="loopStringSample()">Looping over a String</button>
+    <script>
+        'use strict'
+
+        function loopStringSample() {
+
+            let productName = "HL Road Frame - Black, 58"
+            let letters = ""
+
+            for (const char of productName) {
+                letters += char
+            }
+            console.log(letters)
+        }
+
+    </script>
+</body>
+
+</html>
