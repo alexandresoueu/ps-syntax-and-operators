@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>For in Sample</title>
+    </head>
+    <body>
+        <button onclick="forinSample()">for/in Sample</button>
+        <script>
+            'use strict'
+
+            function forinSample() {
+                let product = {
+                    "ProductID": 680,
+                    "name": "HL Road Frame - Black, 58",
+                    "productNumber": "FR-R92B-58",
+                    "color": "Black",
+                    "standadCost": 1059.31,
+                    "listPrice": 1431.50,
+                    calculateGrossProfit: function () {
+                        return this.listPrice - this.standadCost
+                    }
+                }
+
+                for(const key in product) {
+                    console.log("'" + key + "' = " + product[key])
+                }
+            }
+        </script>
+    </body>
+</html>
