@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>For of Sample</title>
+</head>
+
+<body>
+    <button onclick="forofSample()">for/of Sample</button>
+    <script>
+        'use strict'
+
+
+        let _products = [
+            {
+                "ProductID": 680,
+                "name": "HL Road Frame - Black, 58",
+                "productNumber": "FR-R92B-58",
+                "color": "Black",
+                "standadCost": 1059.31,
+                "listPrice": 1431.50,
+            },
+            {
+                "ProductID": 707,
+                "name": "Sport-100 Helmet Red",
+                "productNumber": "HL-U509-R",
+                "color": "Red",
+                "standadCost": 13.08,
+                "listPrice": 34.99,
+            },
+            {
+                "ProductID": 709,
+                "name": "Mountain Bike Socks, M",
+                "productNumber": "SO-B909-M",
+                "color": "White",
+                "standadCost": 3.3963,
+                "listPrice": 9.50,
+            }
+        ]
+
+        function forofSample() {
+            for (const item of _products) {
+                console.log(JSON.stringify(item))
+            }
+        }
+
+    </script>
+</body>
+
+</html>
